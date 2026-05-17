@@ -1052,6 +1052,85 @@ section{position:relative;overflow:hidden}
 .region-tag{z-index:3;}
 @media (hover:none){.region-overlay{display:none;}}
 @media print{.region-overlay{display:none !important;}}
+
+/* =========================================================
+   AJUSTES DE ESPAÇAMENTO + PLANILHA DE TRANSPORTE
+   ========================================================= */
+.section{
+  padding-top:clamp(48px,6vw,76px)!important;
+  padding-bottom:clamp(48px,6vw,76px)!important;
+}
+.section-head{margin-bottom:30px!important;}
+#mensagens .section,#painel .section,#programacao .section,#transporte .section,#locais .section,#premiacao .section,#informes .section,#turismo .section{
+  padding-top:clamp(48px,6vw,76px)!important;
+  padding-bottom:clamp(48px,6vw,76px)!important;
+}
+.transp-planilha{
+  background:#fff;
+  border:1px solid rgba(35,62,99,.10);
+  border-radius:26px;
+  padding:18px;
+  margin:0 0 24px;
+  box-shadow:0 18px 40px -30px rgba(27,53,95,.22);
+}
+.transp-planilha-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+  margin-bottom:14px;
+}
+.transp-planilha-kicker{
+  display:block;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+  color:var(--teal);
+  margin-bottom:6px;
+}
+.transp-planilha h3{
+  margin:0 0 6px;
+  color:var(--navy-light);
+  font-size:clamp(20px,2.2vw,28px);
+  letter-spacing:.2px;
+}
+.transp-planilha p{
+  margin:0;
+  color:var(--text-soft);
+  line-height:1.55;
+  font-size:14px;
+}
+.transp-planilha-btn{
+  flex:0 0 auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 16px;
+  border-radius:999px;
+  background:var(--navy-light);
+  color:#fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.6px;
+  text-transform:uppercase;
+}
+.transp-planilha-imglink{display:block;border-radius:18px;overflow:hidden;border:1px solid rgba(35,62,99,.12);background:#f7fbfd;}
+.transp-planilha-imglink img{display:block;width:100%;height:auto;}
+@media (max-width:720px){
+  .section,#mensagens .section,#painel .section,#programacao .section,#transporte .section,#locais .section,#premiacao .section,#informes .section,#turismo .section{
+    padding-top:42px!important;
+    padding-bottom:42px!important;
+  }
+  .section-head{margin-bottom:24px!important;}
+  .transp-planilha{padding:14px;border-radius:20px;}
+  .transp-planilha-head{display:block;}
+  .transp-planilha-btn{margin-top:12px;width:100%;}
+}
+@media print{
+  .transp-planilha{box-shadow:none!important;break-inside:avoid-page;}
+}
 </style>
 </head>
 <body>
@@ -1188,6 +1267,21 @@ section{position:relative;overflow:hidden}
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção programacao" class="section-print" onclick="printSection('programacao')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div></div>
 <div class="prog-list">
 <div class="prog-item is-special reveal" style="--day-color:var(--gold)"><div class="prog-content"><div class="prog-title">🏆 Abertura · 8h30</div><div class="prog-place"><span class="prog-place-row"><span>APCEF/PB</span><span class="prog-location-links"><a aria-label="Abrir APCEF/PB no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1470209,-34.8087531&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>APCEF/PB</a></span></span></div></div><div class="prog-day-tag">18</div></div>
+<div class="prog-item reveal" style="--day-color:var(--gold)">
+<div class="prog-content">
+<div class="prog-title">Beach Tennis · 10h30</div>
+<div class="prog-place">
+<span class="prog-place-row">
+<span>Praia de Tambaú</span>
+<span class="prog-location-links">
+<a aria-label="Abrir Praia de Tambaú no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1271354,-34.8238405&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Praia de Tambaú</a>
+</span>
+</span>
+</div>
+</div>
+<div class="prog-day-tag">18</div>
+</div>
+
 <div class="prog-item reveal" style="--day-color:var(--gold)"><div class="prog-content"><div class="prog-title">Almoço · a partir das 11h</div><div class="prog-place"><span class="prog-place-row"><span>Vila Olímpica Parahyba e APCEF/PB</span><span class="prog-location-links"><a aria-label="Abrir Vila Olímpica no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1115053,-34.8496196&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Vila Olímpica</a><a aria-label="Abrir APCEF/PB no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1470209,-34.8087531&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>APCEF/PB</a></span></span></div></div><div class="prog-day-tag">18</div></div>
 <div class="prog-item reveal" style="--day-color:var(--gold)"><div class="prog-content"><div class="prog-title">Competições · a partir das 14h</div><div class="prog-place"><span class="prog-place-row"><span>Vila Olímpica Parahyba e APCEF/PB</span><span class="prog-location-links"><a aria-label="Abrir Vila Olímpica no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1115053,-34.8496196&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Vila Olímpica</a><a aria-label="Abrir APCEF/PB no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1470209,-34.8087531&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>APCEF/PB</a></span></span></div></div><div class="prog-day-tag">18</div></div>
 <div class="prog-item reveal" style="--day-color:var(--green)"><div class="prog-content"><div class="prog-title">Competições · 8h às 18h</div><div class="prog-place"><span class="prog-place-row"><span>Vila Olímpica Parahyba e APCEF/PB</span><span class="prog-location-links"><a aria-label="Abrir Vila Olímpica no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1115053,-34.8496196&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Vila Olímpica</a><a aria-label="Abrir APCEF/PB no Waze" class="prog-map-mini" href="https://waze.com/ul?ll=-7.1470209,-34.8087531&amp;navigate=yes" rel="noopener" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>APCEF/PB</a></span></span></div></div><div class="prog-day-tag">19</div></div>
@@ -1205,6 +1299,19 @@ section{position:relative;overflow:hidden}
 <h2 class="section-title">Transporte</h2>
 <p class="section-lede">Horários oficiais de ida, circular para o almoço e retorno em todos os dias dos Jogos.</p>
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção transporte" class="section-print" onclick="printSection('transporte')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div></div>
+<div class="transp-planilha reveal">
+<div class="transp-planilha-head">
+<div>
+<span class="transp-planilha-kicker">Transporte · 18/05</span>
+<h3>Planilha de rotas para a APCEF/PB</h3>
+<p>Consulte os horários e pontos de saída dos hotéis para a programação do dia 18 de maio.</p>
+</div>
+<a class="transp-planilha-btn" href="https://www.fenacef.org.br/wp-content/uploads/2026/05/Tabela-de-transporte-18-05.jpeg" rel="noopener" target="_blank">Abrir planilha</a>
+</div>
+<a class="transp-planilha-imglink" href="https://www.fenacef.org.br/wp-content/uploads/2026/05/Tabela-de-transporte-18-05.jpeg" rel="noopener" target="_blank">
+<img alt="Planilha de transporte do dia 18/05 para a APCEF" loading="lazy" src="https://www.fenacef.org.br/wp-content/uploads/2026/05/Tabela-de-transporte-18-05.jpeg"/>
+</a>
+</div>
 
 <div class="transp-grid">
 <article class="transp-card reveal">
@@ -1389,17 +1496,10 @@ section{position:relative;overflow:hidden}
 <div class="section-head reveal">
 <div class="section-eyebrow">Avisos oficiais</div>
 <h2 class="section-title">Informes <span class="white">Importantes</span></h2>
-<p class="section-lede">Tudo o que você precisa saber sobre credenciamento, alimentação e organização durante a semana de Jogos.</p>
+<p class="section-lede">Tudo o que você precisa saber sobre alimentação, horários, organização e contatos de apoio durante a semana de Jogos.</p>
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção informes" class="section-print" onclick="printSection('informes')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div></div>
 <div class="info-grid">
-<article class="info-card reveal" style="--info-color:var(--cyan)">
-<div class="info-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="16" rx="2" width="18" x="3" y="4"></rect><path d="M3 10h18M8 14h.01M12 14h4M8 18h.01M12 18h4"></path></svg></div>
-<h3 class="info-title">Credenciamento · 17/05</h3>
-<div class="info-body">
-<p><b>Durante todo o dia</b>, na APCEF/PB.</p>
-<p>As credenciais serão entregues <strong>somente aos chefes de delegação</strong>, que serão responsáveis por repassar aos participantes da sua delegação.</p>
-</div>
-</article>
+
 <article class="info-card reveal" data-delay="1" style="--info-color:var(--gold)">
 <div class="info-icon"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"></path></svg></div>
 <h3 class="info-title">Alimentação · 11h às 14h30</h3>
