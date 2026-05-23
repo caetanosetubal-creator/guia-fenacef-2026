@@ -1664,6 +1664,50 @@ body{overflow-x:hidden !important;}
   #transporte .transp-grid{margin-bottom:24px !important;}
   #transporte .transp-note{margin-top:24px !important;}
 }
+</style><style>
+/* ===== REVISÃO FINAL ESTÁVEL ===== */
+:root{--final-section-y:72px;--final-gap:24px;}
+html{scroll-padding-top:120px!important;}
+.nav{min-height:94px!important;}
+.nav-inner{min-height:94px!important;padding-top:10px!important;padding-bottom:10px!important;}
+.nav-logo-wrap{width:clamp(146px,15vw,204px)!important;height:62px!important;}
+.nav-logo-wrap img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;}
+header.hero{min-height:auto!important;padding:168px var(--pad-x) 70px!important;display:block!important;text-align:center!important;}
+header.hero .hero-inner{max-width:1050px!important;margin:0 auto!important;}
+.hero-title,header.hero h1{margin:0 0 20px!important;line-height:.98!important;}
+.hero-sub{max-width:920px!important;margin:0 auto!important;}
+section .section{padding-top:var(--final-section-y)!important;padding-bottom:var(--final-section-y)!important;}
+.section-head{margin-bottom:34px!important;}
+.section-eyebrow{margin-bottom:10px!important;}
+.section-title{font-size:clamp(30px,4.2vw,52px)!important;line-height:1.04!important;letter-spacing:1px!important;margin-bottom:14px!important;}
+#midia .section-title,#boletins .section-title,#programacao .section-title,#locais .section-title{font-size:clamp(30px,3.6vw,46px)!important;}
+.section-lede{max-width:960px!important;line-height:1.65!important;}
+.section-tools{margin-top:18px!important;}
+.final-messages-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:var(--final-gap)!important;align-items:stretch!important;}
+.final-message-card{padding:30px!important;min-height:100%!important;}
+.welcome-avatar{display:block!important;width:104px!important;height:104px!important;object-fit:cover!important;border-radius:50%!important;margin-bottom:16px!important;box-shadow:0 12px 28px rgba(20,48,92,.18)!important;background:#eef5f9!important;}
+.media-feature-video video{aspect-ratio:16/9!important;height:auto!important;min-height:0!important;object-fit:cover!important;}
+.program-past-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:20px!important;}
+.program-past-cover img{width:100%!important;height:170px!important;object-fit:cover!important;display:block!important;background:#dfeaf0!important;}
+.program-upcoming-wrap{margin-top:34px!important;max-width:980px!important;margin-left:auto!important;margin-right:auto!important;}
+.program-upcoming-wrap .upcoming-grid.single-card{grid-template-columns:minmax(0,620px)!important;justify-content:center!important;}
+.videos-wrap{margin-top:42px!important;}
+.video-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px!important;}
+.video-frame{aspect-ratio:16/9!important;background:#07162f!important;}
+.video-frame iframe{width:100%!important;height:100%!important;border:0!important;display:block!important;}
+#transporte{background:linear-gradient(180deg,#f7fbfd 0%,#eef6f9 100%)!important;}
+#transporte .transp-grid{max-width:720px!important;margin:0 auto 28px!important;display:block!important;}
+#transporte .transp-card{padding:26px!important;}
+.transport-gallery{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important;align-items:start!important;margin-top:26px!important;}
+.transport-figure-card{background:#fff!important;border:1px solid rgba(20,48,92,.12)!important;border-radius:22px!important;box-shadow:0 18px 42px rgba(16,30,56,.10)!important;padding:20px!important;display:flex!important;flex-direction:column!important;gap:14px!important;}
+.transport-title{margin:0 0 4px!important;}
+.transport-thumb{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;border-radius:16px!important;background:#fff!important;}
+.transp-planilha-imglink{display:block!important;border-radius:16px!important;overflow:hidden!important;background:#fff!important;}
+.transp-note{max-width:920px!important;margin:28px auto 0!important;}
+.boletins-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:20px!important;}
+.location-grid img,.local-card img,.venue-card img,.tour-grid img{display:block!important;width:100%!important;object-fit:cover!important;background:#dfeaf0!important;}
+@media(max-width:1080px){.program-past-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.boletins-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:900px){:root{--final-section-y:56px}.nav{min-height:86px!important}.nav-inner{min-height:86px!important}header.hero{padding:136px var(--pad-x) 58px!important}.final-messages-grid,.transport-gallery,.video-grid,.boletins-grid{grid-template-columns:1fr!important}.section-title{font-size:clamp(28px,8vw,42px)!important}.program-past-grid{grid-template-columns:1fr!important}.welcome-avatar{width:92px!important;height:92px!important}}
 </style></head>
 <body>
 <!-- NAV -->
@@ -1671,19 +1715,11 @@ body{overflow-x:hidden !important;}
 <div class="nav-inner">
 <a class="nav-brand" href="#hero">
 <div class="nav-logo-wrap">
-<img alt="Jogos FENACEF" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" src="docs/image-1.png"/>
+<img alt="Jogos FENACEF 2026" loading="eager" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" src="docs/image-1.png"/>
 <svg style="display:none;width:100%;height:100%" viewbox="0 0 60 60"><circle cx="30" cy="30" fill="#14305C" r="28" stroke="#ffcd00" stroke-width="2"></circle><text fill="#ffcd00" font-family="Anton" font-size="18" text-anchor="middle" x="30" y="36">JF</text></svg>
 </div>
 </a>
-<div class="nav-links" id="navLinks"><a href="#mensagens">Reta final</a><a href="#midia">Saiu na mídia</a>
-<a href="#programacao">Programação</a>
-<a href="#transporte">Transporte</a><a href="#boletins">Boletins</a>
-<a href="#locais">Locais</a>
-<a href="#premiacao">Premiação</a>
-<a href="#informes">Informes</a>
-<a href="#painel">Painel</a>
-<a href="#turismo">Turismo</a>
-</div>
+<div class="nav-links" id="navLinks"><a href="#mensagens">Reta final</a><a href="#midia">Saiu na mídia</a><a href="#programacao">Programação</a><a href="#transporte">Transporte</a><a href="#boletins">Boletins</a><a href="#locais">Locais</a><a href="#premiacao">Premiação</a><a href="#informes">Informes</a><a href="#painel">Painel</a><a href="#turismo">Turismo</a></div>
 <button aria-label="Menu" class="nav-toggle" id="navToggle"><span></span></button>
 </div>
 </nav>
@@ -1701,7 +1737,7 @@ body{overflow-x:hidden !important;}
 <p class="section-lede">Os Jogos FENACEF 2026 entram no último dia com marcas de superação, felicidade e integração que já tornam esta edição inesquecível.</p>
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção mensagens" class="section-print" onclick="printSection('mensagens')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div>
 </div>
-<div class="welcome-duo final-messages-grid"><article class="welcome-quote final-message-card reveal"><div class="welcome-final-top"><img alt="Valfrido Oliveira" class="welcome-avatar" loading="lazy" src="docs/valfrido-final.jpg"/><span class="kicker">Mensagem institucional</span><h3>Valfrido Oliveira</h3><p class="welcome-role final-role">Presidente da FENACEF</p></div><blockquote>Entramos na reta final com a certeza de que João Pessoa já recebeu uma edição inesquecível. As finais, a premiação e a confraternização vão coroar dias de superação, alegria e integração.</blockquote></article><article class="welcome-quote final-message-card reveal" data-delay="1"><div class="welcome-final-top"><img alt="Vânia Telma Lacerda de Souza" class="welcome-avatar" loading="lazy" src="docs/vania-final.jpg"/><span class="kicker">Mensagem institucional</span><h3>Vânia Telma Lacerda de Souza</h3><p class="welcome-role final-role">Diretora de Eventos da FENACEF</p></div><blockquote>A felicidade dos participantes tem sido contagiante em cada competição, reencontro e delegação. Vamos viver este encerramento com o entusiasmo que fez destes Jogos um momento histórico.</blockquote></article></div></div>
+<div class="welcome-duo final-messages-grid"><article class="welcome-quote final-message-card reveal"><div class="welcome-final-top"><img alt="Valfrido Oliveira" class="welcome-avatar" decoding="async" loading="eager" src="docs/valfrido-final.jpg"/><span class="kicker">Mensagem institucional</span><h3>Valfrido Oliveira</h3><p class="welcome-role final-role">Presidente da FENACEF</p></div><blockquote>Entramos na reta final com a certeza de que João Pessoa já recebeu uma edição inesquecível. As finais, a premiação e a confraternização vão coroar dias de superação, alegria e integração.</blockquote></article><article class="welcome-quote final-message-card reveal" data-delay="1"><div class="welcome-final-top"><img alt="Vânia Telma Lacerda de Souza" class="welcome-avatar" decoding="async" loading="eager" src="docs/vania-final.jpg"/><span class="kicker">Mensagem institucional</span><h3>Vânia Telma Lacerda de Souza</h3><p class="welcome-role final-role">Diretora de Eventos da FENACEF</p></div><blockquote>A felicidade dos participantes tem sido contagiante em cada competição, reencontro e delegação. Vamos viver este encerramento com o entusiasmo que fez destes Jogos um momento histórico.</blockquote></article></div></div>
 </section>
 <section id="midia">
 <div class="section">
@@ -1732,7 +1768,7 @@ body{overflow-x:hidden !important;}
 </div>
 </div>
 <div class="media-feature-video">
-<video controls="" poster="docs/poster-13.png" preload="metadata">
+<video controls="" poster="docs/globo-paraiba-capa.jpg" preload="metadata">
 <source src="https://www.fenacef.org.br/wp-content/uploads/2026/05/Copia-de-SAIU-NA-Video-2.mp4" type="video/mp4"/>
           Seu navegador não suporta vídeo incorporado.
         </video>
@@ -1746,12 +1782,12 @@ body{overflow-x:hidden !important;}
 <div class="section-head reveal">
 <div class="section-eyebrow">Cronograma oficial</div>
 <h2 class="section-title">Programação</h2>
-<p class="section-lede">As galerias dos dias 18, 19, 20 e 21 seguem em destaque. Confira também os vídeos oficiais e, logo abaixo, a programação do encerramento em 23 de maio.</p>
+<p class="section-lede">As galerias dos dias 18, 19, 20 e 21 seguem em destaque. Confira também os vídeos oficiais e a programação do encerramento em 23 de maio.</p>
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção programação" class="section-print" onclick="printSection('programacao')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div>
 </div>
 <div class="program-past-grid">
 <article class="program-past-card reveal">
-<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 1" src="docs/image-2.jpg"/></div>
+<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 1" loading="lazy" src="docs/image-2.jpg"/></div>
 <div class="program-past-body">
 <div class="program-past-kicker">18/05 · Dia 1</div>
 <h3 class="program-past-title">Galeria Jogos FENACEF 2026 – Dia 1</h3>
@@ -1760,7 +1796,7 @@ body{overflow-x:hidden !important;}
 </div>
 </article>
 <article class="program-past-card reveal">
-<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 2" src="docs/image-3.jpg"/></div>
+<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 2" loading="lazy" src="docs/image-3.jpg"/></div>
 <div class="program-past-body">
 <div class="program-past-kicker">19/05 · Dia 2</div>
 <h3 class="program-past-title">Galeria Jogos FENACEF 2026 – Dia 2</h3>
@@ -1769,7 +1805,7 @@ body{overflow-x:hidden !important;}
 </div>
 </article>
 <article class="program-past-card reveal">
-<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 3" src="docs/image-4.jpg"/></div>
+<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 3" loading="lazy" src="docs/image-4.jpg"/></div>
 <div class="program-past-body">
 <div class="program-past-kicker">20/05 · Dia 3</div>
 <h3 class="program-past-title">Galeria Jogos FENACEF 2026 – Dia 3</h3>
@@ -1778,7 +1814,7 @@ body{overflow-x:hidden !important;}
 </div>
 </article>
 <article class="program-past-card reveal" data-delay="3">
-<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 4" fetchpriority="high" loading="eager" src="docs/galeria-dia4-whatsapp.jpg"/></div>
+<div class="program-past-cover"><img alt="Galeria Jogos FENACEF 2026 – Dia 4" fetchpriority="high" loading="lazy" src="docs/galeria-dia4-whatsapp.jpg"/></div>
 <div class="program-past-body">
 <span class="program-past-date">21/05 · Dia 4</span>
 <h3>Galeria Jogos FENACEF 2026 – Dia 4</h3>
@@ -1786,7 +1822,7 @@ body{overflow-x:hidden !important;}
 <a class="program-past-link" href="https://www.fenacef.org.br/2026/05/21/galeria-jogos-fenacef-dia-4/" rel="noopener" target="_blank">Ver galeria parcial</a>
 </div>
 </article></div>
-<div class="program-upcoming-wrap reveal"><h3 class="program-subtitle">Amanhã</h3><p class="program-sublede">Programação geral do encerramento, em <strong>23 de maio</strong>.</p><div class="upcoming-grid single-card"><article class="upcoming-day"><div class="upcoming-date">23/05 · Sábado</div><h3 class="upcoming-title">Finais e encerramento</h3><div class="upcoming-items"><div class="upcoming-item"><strong>8h às 15h</strong><span>Finais e encerramento na APCEF/PB.</span></div><div class="upcoming-item"><strong>10h</strong><span>Premiação de Beach Tennis, Vôlei de Quadra, Vôlei de Areia, Tênis de Quadra 65+ e Futebol Soçaite 65+ na APCEF/PB.</span></div></div></article></div></div><div class="videos-wrap reveal"><h3 class="program-subtitle">Vídeos oficiais</h3><p class="program-sublede">Assista aos vídeos oficiais já publicados com os principais registros dos dias 1, 2, 3 e 4 dos Jogos FENACEF 2026.</p><div class="video-grid"><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UAIn7B_5hu0" title="Vídeo oficial · Dia 1"></iframe></div><div class="video-body"><div class="gallery-day">18/05 · Dia 1</div><h3 class="gallery-title">Vídeo oficial · Dia 1</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=UAIn7B_5hu0" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QSTch_NYf7U" title="Vídeo oficial · Dia 2"></iframe></div><div class="video-body"><div class="gallery-day">19/05 · Dia 2</div><h3 class="gallery-title">Vídeo oficial · Dia 2</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=QSTch_NYf7U" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eBu2wA9LnAA" title="Vídeo oficial · Dia 3"></iframe></div><div class="video-body"><div class="gallery-day">20/05 · Dia 3</div><h3 class="gallery-title">Vídeo oficial · Dia 3</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=eBu2wA9LnAA" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/59qnipLfxjs" title="Vídeo oficial · Dia 4"></iframe></div><div class="video-body"><div class="gallery-day">21/05 · Dia 4</div><h3 class="gallery-title">Vídeo oficial · Dia 4</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=59qnipLfxjs" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article></div></div>
+<div class="program-upcoming-wrap reveal"><h3 class="program-subtitle">Amanhã</h3><p class="program-sublede">Programação geral de encerramento em <strong>23 de maio</strong>.</p><div class="upcoming-grid single-card"><article class="upcoming-day"><div class="upcoming-date">23/05 · Sábado</div><h3 class="upcoming-title">Finais e encerramento</h3><div class="upcoming-items"><div class="upcoming-item"><strong>8h às 15h</strong><span>Finais e encerramento na APCEF/PB.</span></div><div class="upcoming-item"><strong>10h</strong><span>Premiação de Beach Tennis, Vôlei de Quadra, Vôlei de Areia, Tênis de Quadra 65+ e Futebol Soçaite 65+ na APCEF/PB.</span></div></div></article></div></div><div class="videos-wrap reveal"><h3 class="program-subtitle">Vídeos oficiais</h3><p class="program-sublede">Assista aos vídeos oficiais já publicados com os principais registros dos dias 1, 2, 3 e 4 dos Jogos FENACEF 2026.</p><div class="video-grid"><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UAIn7B_5hu0" title="Vídeo oficial · Dia 1"></iframe></div><div class="video-body"><div class="gallery-day">18/05 · Dia 1</div><h3 class="gallery-title">Vídeo oficial · Dia 1</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=UAIn7B_5hu0" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QSTch_NYf7U" title="Vídeo oficial · Dia 2"></iframe></div><div class="video-body"><div class="gallery-day">19/05 · Dia 2</div><h3 class="gallery-title">Vídeo oficial · Dia 2</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=QSTch_NYf7U" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/eBu2wA9LnAA" title="Vídeo oficial · Dia 3"></iframe></div><div class="video-body"><div class="gallery-day">20/05 · Dia 3</div><h3 class="gallery-title">Vídeo oficial · Dia 3</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=eBu2wA9LnAA" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article><article class="video-card"><div class="video-frame"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/59qnipLfxjs" title="Vídeo oficial · Dia 4"></iframe></div><div class="video-body"><div class="gallery-day">21/05 · Dia 4</div><h3 class="gallery-title">Vídeo oficial · Dia 4</h3><p class="gallery-desc">Cobertura em vídeo com os principais momentos, entrevistas e bastidores do dia.</p><a class="gallery-link" href="https://www.youtube.com/watch?v=59qnipLfxjs" rel="noopener noreferrer" target="_blank">Assistir no YouTube</a></div></article></div></div>
 </div>
 </section>
 <section id="transporte"><div class="section">
@@ -1798,15 +1834,15 @@ body{overflow-x:hidden !important;}
 </div>
 <div class="transport-daybar reveal"><strong>Dia 23 de maio</strong><span>Idas pela manhã e retornos à tarde, conforme as tabelas oficiais.</span></div>
 <div class="transport-gallery transport-two-cols reveal" data-delay="1">
-<article class="transport-figure-card"><h3 class="transport-title">Vila Olímpica</h3><a aria-label="Abrir tabela de transporte do dia 23 para a Vila Olímpica" class="transp-planilha-imglink transport-zoom" href="docs/transporte-dia23-vila-olimpica.jpg" rel="noopener noreferrer" target="_blank"><img alt="Tabela oficial de transporte do dia 23 para a Vila Olímpica" class="transport-thumb" loading="lazy" src="docs/transporte-dia23-vila-olimpica.jpg"/></a></article>
-<article class="transport-figure-card"><h3 class="transport-title">APCEF/PB</h3><a aria-label="Abrir tabela de transporte do dia 23 para a APCEF/PB" class="transp-planilha-imglink transport-zoom" href="docs/transporte-dia23-apcef.jpg" rel="noopener noreferrer" target="_blank"><img alt="Tabela oficial de transporte do dia 23 para a APCEF/PB" class="transport-thumb" loading="lazy" src="docs/transporte-dia23-apcef.jpg"/></a></article>
+<article class="transport-figure-card"><h3 class="transport-title">Vila Olímpica</h3><a aria-label="Abrir tabela de transporte do dia 23 para a Vila Olímpica" class="transp-planilha-imglink transport-zoom" href="docs/transporte-dia23-vila-olimpica.jpg" rel="noopener noreferrer" target="_blank"><img alt="Tabela oficial de transporte do dia 23 para a Vila Olímpica" class="transport-thumb" decoding="async" loading="eager" src="docs/transporte-dia23-vila-olimpica.jpg"/></a></article>
+<article class="transport-figure-card"><h3 class="transport-title">APCEF/PB</h3><a aria-label="Abrir tabela de transporte do dia 23 para a APCEF/PB" class="transp-planilha-imglink transport-zoom" href="docs/transporte-dia23-apcef.jpg" rel="noopener noreferrer" target="_blank"><img alt="Tabela oficial de transporte do dia 23 para a APCEF/PB" class="transport-thumb" decoding="async" loading="lazy" src="docs/transporte-dia23-apcef.jpg"/></a></article>
 </div>
 <div class="transp-note reveal"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4M12 16h.01"></path></svg><p><b>Atenção:</b> os horários podem sofrer pequenos ajustes. Acompanhe os avisos oficiais durante os Jogos e, em caso de dúvida, procure sua chefia de delegação.</p></div>
 </div></section><section id="boletins"><div class="section">
 <div class="section-head reveal">
 <div class="section-eyebrow">Arquivos oficiais</div>
 <h2 class="section-title">Documentos técnicos dos Jogos</h2>
-<p class="section-lede">Acesso rápido aos documentos encaminhados no grupo dos chefes de delegação: balizamento e cadernos técnicos 2, 3, 4, 5 e 6.</p>
+<p class="section-lede">Acesso rápido aos documentos encaminhados ao grupo dos chefes de delegação: balizamento e cadernos técnicos 2, 3, 4, 5 e 6.</p>
 <div class="section-tools"><button aria-label="Imprimir ou salvar em PDF a seção boletins" class="section-print" onclick="printSection('boletins')" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"></path><path d="M6 14h12v8H6z"></path></svg>Imprimir / PDF</button></div>
 </div>
 <div class="boletins-grid">
